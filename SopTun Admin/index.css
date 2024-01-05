@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #062925;
+    margin: 0;
+}
+
+.container4{
+    background-color: #062925;
+}
+
+.container3 {
+    background-color: #062925;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 6px;
+    float: left;
+}
+
+.container{
+    background-color: white;
+    margin-left: 156px;
+    height: 600px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 0px;
+}
+
+.container h1{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container2{
+    background-color: #062925;
+    width: 350px;
+    height: 370px;
+    margin-top: 30px;
+    margin-left: 350px;
+    margin-right: 100px;
+    border-radius: 30px;
+}
+
+h2{
+    color: white;
+    margin-top: 15px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.container2 form input{
+    width: calc(80% - 20px);
+    padding: 8px 10px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 23px;
+    font-size: 15px;
+    height: 30px;
+}
+
+.container2 p{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+
+.container2 button {
+    margin-left: 130px;
+    margin-bottom: 10px;
+    background-color: #045757;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.container2 svg {
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container2 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+

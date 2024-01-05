@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 'nav nav' 'main main main';
+}
+
+.nav {
+    background-color: #183D3D;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav img {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.nav a {
+    color: white;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav a:hover {
+    color: #045757;
+}
+
+.nav input {
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 226px;
+}
+
+.nav svg {
+    color: white;
+    margin-left: 7px;
+}
+
+.nav button {
+    background-color: white;
+    color: black;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.nav button svg {
+    color: black;
+    align-items: start;
+    justify-content: center;
+    margin-right: 7px;
+}
+
+/* end nav */
+/* start main */
+
+.hero img {
+    width: 100%;
+}
+
+.main-content {
+    display: grid;
+    grid-template-areas: 
+    'pengertian pengertian gambar gambar komentar komentar'
+    'definisi definisi contoh contoh komentar komentar'
+    ;
+}
+
+/* start pengertian */
+
+.pengertian {
+    background-color: #183D3D;
+    grid-area: pengertian;
+    width: 730px;
+    margin-left: 35px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.pengertian img {
+    grid-area: pengertian;
+    float: right;
+    width: 210px;
+}
+
+.pengertian p {
+    grid-area: pengertian;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.pengertian h2 {
+    color: white;
+    margin-left: 20px;
+    font-family: 'Poppins';
+    grid-area: pengertian;
+}
+/* end pengertian */
+/* start definisi */
+.definisi {
+    grid-area: definisi;
+    background-color: #183D3D;
+    margin-left: 35px;
+    margin-top: 30px;
+    border-radius: 20px;
+    width: 340px;
+    height: 300px;
+}
+
+.definisi p {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* end definisi */
+/* start contoh */
+
+.contoh {
+    grid-area: definisi;
+    margin-left: 410px;
+    margin-top: 35px;
+    background-color: #183D3D;
+    width: 357px;
+    border-radius: 15px;
+}
+
+.contoh img {
+    width: 357px;
+}
+
+.contoh h2 {
+    font-family: 'Poppins';
+    color: white;
+    margin-left: 5px;
+}
+
+.contoh p {
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins';
+    margin-left: 5px;
+}
+
+/* end contoh */
+/* start  cara menghindari*/
+
+.cara-menghindari {
+    grid-area: definisi;
+    margin-top: 350px;
+    margin-left: 30px;
+    background-color: #183D3D;
+    width: 340px;
+    border-radius: 20px;
+}
+
+.cara-menghindari h2 {
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.cara-menghindari p {
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins';
+    margin-left: 12px;
+}
+/* end cara menghindari */
+
+/* start komentar */
+.komentar{
+    grid-area: komentar;
+    background-color: #183D3D;
+    width: 430px;
+    height: 690px;
+    margin-left: 25px;
+    margin-top: 35px;
+    border-radius: 20px;
+    z-index: 20;
+}
+
+  /* CSS untuk kolom komentar */
+  .comment-box {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    background-color: none;
+  }
+
+  .comment-box h3 {
+    color: white;
+    font-family: 'Poppins';
+  }
+
+  /* CSS untuk daftar komentar */
+  .comment-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* CSS untuk setiap komentar */
+  .comment {
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: none;
+    color: white;
+    font-family: 'Poppins';
+  }
+
+  /* CSS untuk tombol "Like" */
+  .like-button {
+    background-color: #045757;
+    margin-left: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+/* end komentar */
+
+/* start button */
+.button {
+    grid-area: komentar;
+}
+
+.button input {
+    background-color: #183D3D;
+    width: 200px;
+    height: 40px;
+    margin-top: 760px;
+    margin-left: 25px;
+    border-radius: 20px;
+}
+/* end button */
+
+/* start footer */
+
+.footer2 {
+    margin-top: 20px;
+    background-color: #183D3D;
+    width: 100%;
+    height: 100%;
+}
+
+.footer2 h1 {
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: center;
+}
+
+/* start sosial media */
+
+.media-sosial svg {
+    color: #fff;
+    margin-top: 5px;
+}
+/* start copyright */
+
+.copyright h4 {
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+    margin-top: 5px;
+}

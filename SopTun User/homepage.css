@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 'nav nav' 'main main main';
+}
+
+.nav {
+    background-color: #183D3D;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.nav img {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.nav a {
+    color: white;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #045757;
+}
+
+.nav input {
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 226px;
+}
+
+.nav svg {
+    color: white;
+    margin-left: 7px;
+}
+
+.nav button {
+    background-color: white;
+    color: black;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.nav button svg {
+    color: black;
+    align-items: start;
+    justify-content: center;
+    margin-right: 7px;
+}
+
+.main {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'left left middle middle right right';
+}
+
+.header {
+    padding: 0%;
+    height: 250px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.header img {
+    width: 100%;
+}
+
+.left,
+.middle,
+.right {
+    padding: 50px;
+    height: 300px;
+    margin-top: 40px;
+}
+
+.left {
+    grid-area: left;
+}
+
+.left img {
+    width: 300px;
+    height: 200px;
+    transition: transform 0.2s ease;
+    z-index: -1;
+}
+    
+.left img:hover {
+     transform: scale(1.1);
+     z-index: -10;
+    
+}
+.middle {
+    grid-area: middle;
+}
+
+.middle img {
+    width: 300px;
+    height: 200px;
+    z-index: -1;
+}
+
+.right {
+    grid-area: right;
+}
+
+.right img {
+    width: 300px;
+    height: 200px;
+    z-index: -1;
+}
+
+.footer {
+    display: grid;
+    grid-template-areas: 'left left middle middle right right';
+    width: 100%;
+}
+
+.kiri img {
+    display: grid;
+    grid-area: left middle;
+    width: 100%;
+    height: 400px;
+    margin-left: 50px;
+}
+
+.kanan img {
+    display: grid;
+    grid-area: right;
+    width: 100%;
+    height: 400px;
+    margin-left: 50px;
+    padding-left: 122px;
+}
+
+/* start footer */
+
+.footer2 {
+    margin-top: 20px;
+    background-color: #183D3D;
+    width: 100%;
+    height: 100%;
+}
+
+.footer2 h1 {
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: center;
+}
+
+/* start sosial media */
+
+.social-media svg {
+    color: white;
+    margin-left: 300px;
+}
+
+/* start copyright */
+
+.copyright h4 {
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.left img {
+    transition: transform 0.2s ease;
+}
+  
+.left img:hover {
+    transform: scale(1.1);
+}
+
+.middle img {
+    transition: transform 0.2s ease;
+}
+  
+.middle img:hover {
+    transform: scale(1.1);
+}
+
+.right img {
+    transition: transform 0.2s ease;
+}
+  
+.right img:hover {
+    transform: scale(1.1);
+}

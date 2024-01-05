@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 'nav nav' 'main main main';
+}
+
+.nav {
+    background-color: #183D3D;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.nav img {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.nav a {
+    color: white;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav a:hover {
+    color: #045757;
+}
+
+.nav input {
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 226px;
+}
+
+.nav svg {
+    color: white;
+    margin-left: 7px;
+}
+
+.nav button {
+    background-color: white;
+    color: black;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.nav button svg {
+    color: black;
+    align-items: start;
+    justify-content: center;
+    margin-right: 7px;
+}
+
+/* end nav */
+
+/* start hero */
+.hero img {
+    width: 100%;
+}
+/* end hero */
+
+/* start utama */
+/* start no soal */
+.nosoal {
+    background-color: #183D3D;
+    width: 150px;
+    border-radius: 30px;
+    height: 45px;
+    margin-left: 550px;
+    margin-top: 20px;
+}
+.nosoal h1 {
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+}
+/* end no soal */
+
+/* start soal */
+.soal {
+    width: 700px;
+    margin-left: 267px;
+    border-radius: 30px;
+    height: 250px;
+    background-color: #062925;
+    display: grid;
+    grid-template-areas:
+    'soal soal'
+    'jawabana jawabanb'
+    'jawabanc jawaband'
+    ;
+}
+
+.soal h2 {
+    grid-area: soal;
+    color: white;
+    font-family: 'Poppins';
+    text-align: center;
+    margin-top: 10px;
+}
+/* end soal */
+
+/* start jawaban a */
+.jawabana {
+    grid-area: jawabana;
+}
+.custom-button {
+    background-color: #045757;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height: 40px;
+    margin-left: 30px;
+  }
+
+  .custom-button.clicked {
+    background-color: red;
+  }
+/* end jawaban a */
+
+/* start jawaban b */
+.jawabanb {
+    grid-area: jawabanb;
+}
+
+.custom-buttonb {
+    background-color: #045757;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height: 40px;
+  }
+
+  .custom-buttonb.clicked {
+    background-color: red;
+  }
+/* end jawaban b */
+
+/* start jawaban c */
+.jawabanc {
+    grid-area: jawabanc;
+}
+.custom-buttonc {
+    background-color: #045757;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height: 40px;
+    margin-left: 30px;
+  }
+
+  .custom-buttonc.clicked {
+    background-color: red;
+  }
+/* end jawaban c */
+
+/* start jawaban d */
+.jawaband {
+    grid-area: jawaband;
+}
+.custom-buttond {
+    background-color: #045757;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+    height: 40px;
+  }
+
+  .custom-buttond.clicked {
+    background-color: green;
+  }
+/* end jawaban d */
+/* end utama */
+
+/* start next button */
+.next input {
+    width: 200px;
+    height: 40px;
+    background-color: #183D3D;
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins';
+    border-radius: 20px;
+    font-size: 20px;
+    margin-left: 930px;
+}
+/* end next button */
